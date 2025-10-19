@@ -119,7 +119,6 @@ Armazena cada registro de despesa de um usuário.
 Diagramas que representam o fluxo do usuário no sistema, incluindo interações entre classes, troca de mensagens e fluxo de informações. Cada caso de uso possui objetivos, atores, pré-condições, fluxos principal/alternativos, exceções e pós-condições
 
 ### USER
-
 ### UC-01 - Cadastrar novo usuário
 
 **Descrição:**
@@ -196,7 +195,6 @@ O empreendedor deve ter acesso à sua conta de e-mail cadastrada no sistema.
 A senha do empreendedor é atualizada com sucesso, invalidando a anterior.
 
 ### EXPENSES
-
 ### UC-01 - Gerenciar despesas
 
 **Descrição:**
