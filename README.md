@@ -80,7 +80,7 @@ Diagrama que representa a estrutura lógica do nosso banco de dados principal, i
 
 Armazena os dados dos microempreendedores.
 
-- **id (UUID, PK, AUTO_INCREMENT):** Chave primária.
+- **id (UUID, PK, UNIQUE):** Chave primária.
 - **name (VARCHAR(255), NOT NULL):** Nome do usuário.
 - **email (VARCHAR(255), NOT NULL, UNIQUE):** E-mail para login, deve ser único.
 - **phone (VARCHAR(11), NOT NULL):** Telefone do usuário, sem formatação
@@ -92,7 +92,7 @@ Armazena os dados dos microempreendedores.
 
 Armazena as possíveis categorias de despesas para organização.
 
-- **id (UUID, PK, AUTO_INCREMENT):** Chave primária.
+- **id (UUID, PK, UNIQUE):** Chave primária.
 - **name (VARCHAR(100), NOT NULL, UNIQUE):** Nome único da categoria.
 - **description (TEXT, NULL):** Descrição opcional.
 
@@ -100,7 +100,7 @@ Armazena as possíveis categorias de despesas para organização.
 
 Armazena cada registro de despesa de um usuário.
 
-- **id (UUID, PK, AUTO_INCREMENT):** Chave primária.
+- **id (UUID, PK, UNIQUE):** Chave primária.
 - **user_id (UUID, NOT NULL, FK):** Referencia user(id). Garante que a despesa tem um "dono".
 - **issue_date (DATE, NOT NULL):** Data de competência da conta
 - **due_date (DATE, NOT NULL):** Data de vencimento da conta.
@@ -112,9 +112,13 @@ Armazena cada registro de despesa de um usuário.
 - **recurrence (ENUM, DEFAULT 'NONE'):** Recorrência da conta. É um ENUM(’NONE’, ‘WEEKLY’, ‘MONTHLY’)
 - **createdAt / updatedAt (TIMESTAMP):** Campos para auditoria.
 
+## 3. Diagrama de Classes
 
+Diagramas que representam as classes da aplicação, sendo elas as entidades dos bancos e seus respectivos atributos. É a representação da estrutura e relação das classes que servirão de modelo para os objetos.
 
-## 3. Especificação de Casos de Uso (UC)
+![IMG_1462.jpeg](IMG_1462.jpeg)
+
+## 4. Especificação de Casos de Uso (UC)
 
 Diagramas que representam o fluxo do usuário no sistema, incluindo interações entre classes, troca de mensagens e fluxo de informações. Cada caso de uso possui objetivos, atores, pré-condições, fluxos principal/alternativos, exceções e pós-condições
 
