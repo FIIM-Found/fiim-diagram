@@ -72,7 +72,9 @@ Modelo Entidade-Relacionamento (MER) que representará a estrutura conceitual do
 
 Diagrama que representa a estrutura lógica do nosso banco de dados principal, incluindo tabelas, colunas e relacionamentos (chaves primárias e estrangeiras).
 
-![der.png](der.png)
+<p align=center>
+    <img src="der.png">
+</p>
 
 ### Detalhamento das Tabelas
 
