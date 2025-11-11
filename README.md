@@ -25,7 +25,8 @@ Modelo Entidade-Relacionamento (MER) que representará a estrutura conceitual do
     - **Name**: Nome completo do usuário.
     - **Email**: Endereço de e-mail, que será usado para login e comunicação.
     - **PasswordHash**: A senha do usuário, armazenada de forma segura (criptografada).
-    - **CNPJ**: O Cadastro Nacional da Pessoa Jurídica do MEI.
+    - **DocumentType**: O tipo de documento do cliente (ex: CNPJ, CPF).
+    - **DocumentId**: O Cadastro Nacional da Pessoa do MEI (CNPJ) ou Pessoa física (CPF).
     - **Phone**: Número de contato do usuário.
     - **CreatedAt**: Data em que o cadastro foi realizado.
     - **UpdatedAt**: Data em que o cadastro foi alterado
