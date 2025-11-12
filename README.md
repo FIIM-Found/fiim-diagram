@@ -87,7 +87,8 @@ Armazena os dados dos microempreendedores.
 - **name (VARCHAR(255), NOT NULL):** Nome do usuário.
 - **email (VARCHAR(255), NOT NULL, UNIQUE):** E-mail para login, deve ser único.
 - **phone (VARCHAR(11), NOT NULL):** Telefone do usuário, sem formatação
-- **cnpj (VARCHAR(14), NOT NULL, UNIQUE):** CNPJ do MEI, sem formatação, deve ser único.
+- **document_type (ENUM, NOT NULL):** Tipo do documento do cliente, sem formatação. É um ENUM('CPF', 'CNPJ').
+- **document_id (VARCHAR(14, NOT NULL, UNIQUE)):** ID do documento do MEI, sem formatação, deve ser único.
 - **password_hash (VARCHAR(255), NOT NULL):** Senha após a aplicação de um algoritmo de hash (ex: bcrypt).
 - **createdAt / updatedAt (TIMESTAMP):** Campos para auditoria.
 
