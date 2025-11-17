@@ -120,7 +120,10 @@ Armazena cada registro de despesa de um usuário.
 
 Diagramas que representam as classes da aplicação, sendo elas as entidades dos bancos e seus respectivos atributos. É a representação da estrutura e relação das classes que servirão de modelo para os objetos.
 
-![IMG_1462.jpeg](IMG_1462.jpeg)
+<br></br>
+<p align=center>
+    <image src="Diagrama de Classe.drawio.png">
+</p>
 
 ## 4. Especificação de Casos de Uso (UC)
 
